@@ -1,0 +1,133 @@
+<section class="sec10">
+  <div class="container">
+    <h1 class="bg-body-tertiary">New Style For You:</h1>
+    <br /><br />
+    <div class="row">
+      <div class="col-lg-3 bg-warning" id="slide-bar">
+        <!-- <div class="t-search">
+          <h3>Search here..</h3>
+          <form action="#" method="post">
+            <input type="text" placeholder="Search here ..." class="in100" />
+            <button type="submit" class="but2 bg-warning">
+              <img src="/assets/pets.png" />
+            </button>
+          </form>
+        </div>
+        <div class="range">
+          <ul class="dropdown-menu6">
+            <li></li>
+          </ul>
+        </div>
+        <div class="left-side">
+          <h3>Filter</h3>
+          <ul>
+            <li>
+              <input type="radio" name="group-radio" />
+              <span class="spann">Trousers</span>
+            </li>
+            <li>
+              <input type="radio" name="group-radio" />
+              <span class="spann">Blazer</span>
+            </li>
+            <li>
+              <input type="radio" name="group-radio" />
+              <span class="spann">Dress</span>
+            </li>
+            <li>
+              <input type="radio" name="group-radio" />
+              <span class="spann">Skirt</span>
+            </li>
+          </ul>
+        </div> -->
+        <div class="left-side">
+          <br /><br /><br />
+          <nav class="nav nav-tab flex-column">
+            <ul>
+              <li>
+                <a
+                  class="nav-link active"
+                  ng-click="handleCategory('blazers')"
+                  aria-current="page"
+                  href="#product/"
+                  ><h4>Blazer</h4></a
+                >
+              </li>
+              <li>
+                <br /><br /><br />
+                <a
+                  class="nav-link"
+                  ng-click="handleCategory('trouser')"
+                  href="#product/"
+                  ><h4>Trouser</h4></a
+                >
+              </li>
+              <li>
+                <br /><br /><br />
+                <a
+                  class="nav-link"
+                  ng-click="handleCategory('dress')"
+                  href="#product/"
+                  ><h4>Dress</h4></a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="slide-bar col-lg-9 text-center">
+        <h3 class="bg-warning">Tất Cả Sản Phẩm</h3>
+        <div class="flex-wrap">
+          <div class="row">
+            <div class="col-lg-6 col-sm-0 col-md-0">
+              <img
+                src="/assets/ch1.jpg"
+                style="width: 400px; height: 200px; margin-top: 10px"
+              />
+            </div>
+            <div class="col-lg-6 col-sm-0 col-md-0">
+              <img
+                src="/assets/ch2.jpg"
+                style="width: 400px; height: 200px; margin-top: 10px"
+              />
+            </div>
+          </div>
+          <br />
+          <div class="row" id="blazer">
+            <div
+              class="col-lg-3 col-md-6 col-sm-6"
+              ng-repeat="listB in listBlazer"
+            >
+              <a href="#sanpham/details/{{listB.id}}"
+                ><div class="card" style="width: 98%">
+                  <img
+                    ng-src="/assets/{{listB.image}}"
+                    class="card-img-top"
+                    alt="..."
+                  />
+
+                  <div class="card-body">
+                    <h6>{{listB.ten}}</h6>
+                    <div class="card-title text-center"></div>
+                    <p>
+                      <label>${{listB.gia}}</label>
+                      <br />
+                      <span
+                        ><a href="#giohang"
+                          ><button class="btn btn-light">
+                            <img
+                              src="/assets/cart.png"
+                              ng-click="handleBuy($event,$index)"
+                              alt=""
+                            /></button></a
+                      ></span>
+                    </p>
+                  </div></div
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<br /><br />

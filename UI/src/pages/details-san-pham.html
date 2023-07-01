@@ -1,0 +1,67 @@
+<section class="sec200">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-sm-6 col-md-6">
+        <img ng-src="/assets/{{blazer.image}}" style="width: 100%" />
+        <br />
+        <br />
+      </div>
+      <div class="col-lg-6 col-sm-6 col-md-6">
+        <div class="title">
+          <h4>Name: {{blazer.ten}}</h4>
+          <h3>Chất liệu nilen thời trang công sở, nhiều màu và size, A137</h3>
+          <p>
+            <strong>Số lượng: </strong>
+            <span
+              ><button class="btn btn-secondary">-</button>
+              <input type="text" style="width: 4%" value="1" />
+              <button class="btn btn-secondary">+</button></span
+            >
+            <span style="color: red"> còn {{blazer.soluong}} sản phẩm</span>
+          </p>
+          <h4>{{blazer.gia}} VND</h4>
+          <p>
+            <button class="btn btn-success">
+              <img
+                src="/assets/shopping-cart.png"
+                alt=""
+                ng-click="handleBuy($event,$index)"
+              />
+              Thêm vào giỏ hàng
+            </button>
+
+            <a href="#spdamua">
+              <button class="btn btn-success">Mua Ngay</button></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="sec500">
+  <div class="container">
+    <hr style="height: 5px" />
+    <h3 class="text-center">Các Sản Phẩm Tương Tự</h3>
+    <hr style="height: 5px" />
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6" ng-repeat="li in listBlazer">
+        <a href="#sanpham/details/{{li.id}}"
+          ><div class="card" style="width: 98%">
+            <img ng-src="/assets/{{li.image}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6><a href="#">{{li.ten}}</a></h6>
+              <div class="card-title text-center"></div>
+              <p>
+                <label>${{li.gia}}</label>
+                <span
+                  ><button class="btn btn-light">
+                    <img src="/assets/cart.png" alt="" /></button
+                ></span>
+              </p>
+            </div></div
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,156 @@
+<!-- phần thêm tài khoản thành công thì đăng nhập -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/plugin/bootstrap.css" />
+    <link rel="stylesheet" href="/css/custom/home.css" />
+    <title>DangKy</title>
+  </head>
+  <body ng-app="myApp">
+    <header>
+      <div class="container">
+        <br />
+        <div class="row">
+          <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="logo">
+              <h1><em>Pinny Shop</em></h1>
+              <img src="/assets/pets.png" alt="Pinny Shop" />
+              <a href=""
+                ><em><strong>Shopping with Pinny Go!</strong></em></a
+              >
+            </div>
+          </div>
+          <!-- <div class="col-lg-6 col-sm-6 col-md-6">
+            <div class="title">
+              <h2>Đăng Ký</h2>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </header>
+    <br />
+    <section class="sec1e">
+      <div class="container">
+        <div class="title text-center">
+          <h2>Đăng Ký</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="/assets/shop.png" alt="" />
+          </div>
+          <div class="col-lg-8">
+            <form class="form-group" style="width: 80%">
+              Nhập tên:
+              <input
+                type="text"
+                name="name"
+                aria-describedby="name"
+                class="form-control"
+                required
+              />
+
+              <br />
+
+              Nhập email:
+              <input
+                type="email"
+                name="email"
+                aria-describedby="email"
+                class="form-control"
+                required
+              />
+
+              <br />
+
+              Nhập mật khẩu:
+              <input
+                type="password"
+                name="password"
+                aria-describedby="password"
+                class="form-control"
+                required
+              />
+              <br />
+              <!-- Nhập lại mật khẩu:
+              <input
+                type="password"
+                name="password"
+                aria-describedby="password"
+                class="form-control"
+                required
+              /> -->
+              <br />
+              <div class="text-center">
+                <button ng-click="" type="submit" class="btn btn-success">
+                  <i class="fas fa-times"></i>
+                  Đăng ký
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>About us</h3>
+            <p>
+              Curabitur non nulla sit amet nislinit tempus convallis quis ac
+              lectus. lac inia eget consectetur sed, convallis at tellus. Nulla
+              porttitor accumsana tincidunt.
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Get in touch</h3>
+            <div class="info">
+              <h4>Location:</h4>
+              <p>0926k 4th block building, king Avenue, New York City.</p>
+              <div class="info2">
+                <h4>Contact:</h4>
+                <p>Phone : +121 098 8907 9987</p>
+                <p>Email: shoppinny.@gmail.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Quick links</h3>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Products</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <!-- <li>
+                <a href="#contact">Contact</a>
+              </li> -->
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <h3>Sign up for your offers</h3>
+            <p>
+              By subscribing to our mailing list you will always get latest news
+              and updates from us.
+            </p>
+            <input type="text" placeholder="Enter Your Email..." />
+            <button type="submit" class="but">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/lib/angular.js"></script>
+    <script src="/lib/angular-route.js"></script>
+    <script src="/js/plugin/bootstrap.min.js"></script>
+  </body>
+</html>

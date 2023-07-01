@@ -1,0 +1,110 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 bg-danger-subtle" id="slide-bar">
+        <div class="left-side">
+          <h3>ADMIN</h3>
+          <br /><br /><br />
+          <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#qlysanpham"
+              ><h3><img src="/assets/edit.png" alt="" />Sản Phẩm</h3></a
+            >
+            <br /><br /><br /><br />
+            <a class="nav-link" href="#category"
+              ><h3><img src="/assets/edit.png" alt="" />Thể Loại</h3></a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="slide-bar col-lg-9">
+        <h3 class="text-center">Add Category</h3>
+        <div class="flex-wrap">
+          <div class="row">
+            <form>
+              <!-- ID :
+              <input
+                type="text"
+                name="id"
+                ng-model="categoryF.id"
+                class="form-control"
+                required
+              /> -->
+
+              <br />
+              Tên :
+              <input
+                type="text"
+                name="ten"
+                ng-model="categoryF.ten"
+                class="form-control"
+                required
+              />
+
+              <br />
+              Số Lượng :
+              <input
+                type="number"
+                name="soluong"
+                ng-model="categoryF.soluong"
+                class="form-control"
+                required
+              />
+
+              <br />
+
+              <button ng-click="addCategory($event)" class="btn btn-success">
+                ADD
+              </button>
+              <button
+                ng-click="updateCategories($event)"
+                class="btn btn-success"
+              >
+                UPDATE
+              </button>
+              <!-- <button
+                ng-click="removeCategories($event,listCategory.id)"
+                class="btn btn-success"
+              >
+                DELETE
+              </button> -->
+            </form>
+          </div>
+          <br />
+          <div class="row">
+            <form>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Số Lượng</th>
+                    <th>Function</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="li in listCategories">
+                    <td>{{li.id}}</td>
+                    <td>{{li.ten}}</td>
+                    <td>{{li.soluong}}</td>
+                    <td>
+                      <a
+                        href="#category/detail/{{li.id}}"
+                        ng-click="detailCategory($event,$index)"
+                        >Detail</a
+                      >
+                      <a
+                        href="#category/delete/{{li.id}}"
+                        ng-click="removeCategories($event,$index)"
+                        >Delete</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

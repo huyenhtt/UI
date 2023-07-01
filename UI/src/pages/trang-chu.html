@@ -1,0 +1,91 @@
+<section>
+  <!-- <div class="card-shop">
+    <button type="button" class="btn position-relative bg-info-subtle">
+      <a href="#giohang"><img src="/assets/shopping-cart.png" alt="" /></a>
+      <span
+        class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+      >
+        {{sp.soluong}}
+      </span>
+    </button>
+  </div> -->
+</section>
+<section class="sec1">
+  <img src="/assets/stylehan.jpg" class="d-sm-block w-100" alt="..." />
+</section>
+<!--  -->
+<br />
+
+<br />
+<section class="sec3">
+  <div class="container">
+    <hr style="height: 5px" />
+    <h3 class="text-center">
+      Sản Phẩm Bán Chạy Nhất
+      <span><img src="/assets/pets.png" alt="" /></span>
+    </h3>
+    <hr style="height: 5px" />
+    <br />
+    <br />
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6" ng-repeat="sp in listSeler">
+        <a href="#sanpham/details/{{sp.id}}"
+          ><div class="card" style="width: 98%">
+            <img ng-src="/assets/{{sp.image}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6>{{sp.ten}}</h6>
+              <div class="card-title text-center"></div>
+              <p>
+                <label>${{sp.gia}}</label>
+                <span
+                  ><button
+                    class="btn btn-light"
+                    ng-click="handleBuy($event,$index)"
+                  >
+                    <img src="/assets/cart.png" alt="" /></button
+                ></span>
+              </p>
+              <!-- <div class="card-title text-center">
+              <button type="button" class="btn btn-danger">Add To Card</button>
+            </div> -->
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<br />
+<br />
+
+<br /><br />
+<section class="sec500">
+  <div class="container">
+    <hr style="height: 5px" />
+    <h3 class="text-center">Sản Phẩm Mới Nhất</h3>
+    <hr style="height: 5px" />
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-sm-6" ng-repeat="li in listNewProduct">
+        <a href="#sanpham/details/{{li.id}}"
+          ><div class="card" style="width: 98%">
+            <img ng-src="/assets/{{li.image}}" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h6><a href="#">{{li.ten}}</a></h6>
+              <div class="card-title text-center"></div>
+              <p>
+                <label>${{li.gia}}</label>
+                <span
+                  ><button class="btn btn-light">
+                    <img
+                      src="/assets/cart.png"
+                      ng-click="handleBuy($event,$index)"
+                      alt=""
+                    /></button
+                ></span>
+              </p>
+            </div></div
+        ></a>
+      </div>
+    </div>
+  </div>
+</section>

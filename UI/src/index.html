@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ass 2</title>
+    <link rel="stylesheet" href="/css/custom/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap"
+    />
+    <link rel="stylesheet" href="/css/plugin/bootstrap.min.css" />
+  </head>
+  <body>
+    <header ng-include="'./layout/header.html'"></header>
+    <br />
+    <main ng-view></main>
+    <br />
+    <footer ng-include="'./layout/footer.html'"></footer>
+    <script src="/lib/angular.js"></script>
+
+    <script src="/lib/angular-route.js"></script>
+    <script src="../db.json"></script>
+    <script src="/js/plugin/bootstrap.min.js"></script>
+    <script src="../src/config/api.js"></script>
+    <script src="../src/controller/blazer/category.js"></script>
+    <script src="./controller/quanao/quanAoCtrl.js"></script>
+    <script src="./controller/blazer/quanAo.js"></script>
+    <script src="./controller/quanao/trangchuCtrl.js"></script>
+    <script src="route.js"></script>
+  </body>
+</html>

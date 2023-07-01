@@ -1,0 +1,255 @@
+{
+  "quanAo": [
+    {
+      "id": "id 1",
+      "ten": "bl 1",
+      "gia": 100,
+      "image": "bla1.jpg",
+      "soluong": 0,
+      "theloai": "blazers",
+      "ngayNhap": "05-11-2023",
+      "soluongMua": 8
+    },
+    {
+      "id": "id 2",
+      "ten": "Blazer  2",
+      "gia": 60,
+      "image": "bla2.jpg",
+      "soluong": 80,
+      "theloai": "blazers",
+      "ngayNhap": "05-11-2023",
+      "soluongMua": 1
+    },
+    {
+      "id": "id 3",
+      "ten": "Dress 3",
+      "gia": 18,
+      "image": "vay99.jpg",
+      "soluong": 80,
+      "theloai": "dress",
+      "ngayNhap": "11-11-2023",
+      "soluongMua": 1
+    },
+    {
+      "id": "id 4",
+      "ten": "Dress 4",
+      "gia": 71,
+      "image": "vay4.jpg",
+      "soluong": 70,
+      "theloai": "dress",
+      "ngayNhap": "12-11-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "id 5",
+      "ten": "Blazer 5",
+      "gia": 94,
+      "image": "bla4.jpg",
+      "soluong": 60,
+      "theloai": "blazers",
+      "ngayNhap": "05-10-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "id 6",
+      "ten": "Trouser 6",
+      "gia": 140,
+      "image": "qq3.jpg",
+      "soluong": 50,
+      "theloai": "trouser",
+      "ngayNhap": "12-11-2023",
+      "soluongMua": 1
+    },
+    {
+      "id": "id 7",
+      "ten": "Trouser 7",
+      "gia": 400,
+      "image": "qq5.jpg",
+      "soluong": 40,
+      "theloai": "trouser",
+      "ngayNhap": "08-11-2023",
+      "soluongMua": 1
+    },
+    {
+      "id": "id 8",
+      "ten": "Dress 8",
+      "gia": 300,
+      "image": "v1.jpg",
+      "soluong": 30,
+      "theloai": "dress",
+      "ngayNhap": "05-11-2022",
+      "soluongMua": 0
+    },
+    {
+      "id": "1",
+      "ten": "Dress 1",
+      "gia": 50,
+      "image": "v69.jpg",
+      "soluong": 44,
+      "theloai": "dress",
+      "ngayNhap": "05-10-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "2",
+      "ten": "Dress 2",
+      "gia": 40,
+      "image": "v1.jpg",
+      "soluong": 30,
+      "theloai": "dress",
+      "ngayNhap": "05-11-2021",
+      "soluongMua": 0
+    },
+    {
+      "id": "3",
+      "ten": "Dress 3",
+      "gia": 30,
+      "image": "v2.jpg",
+      "soluong": 30,
+      "theloai": "dress",
+      "ngayNhap": "11-10-2023",
+      "soluongMua": 1
+    },
+    {
+      "id": "4",
+      "ten": "Dress 4",
+      "gia": 20,
+      "image": "vay8.jpg",
+      "soluong": 20,
+      "theloai": "dress",
+      "ngayNhap": "05-10-2022",
+      "soluongMua": 0
+    },
+    {
+      "id": "5",
+      "ten": "Dress 5",
+      "gia": 100,
+      "image": "vahq.jpg",
+      "soluong": 10,
+      "theloai": "dress",
+      "ngayNhap": "05-01-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "6",
+      "ten": "Dress 6",
+      "gia": 110,
+      "image": "vay4.jpg",
+      "soluong": 110,
+      "theloai": "dress",
+      "ngayNhap": "05-11-2022",
+      "soluongMua": 0
+    },
+    {
+      "id": "7",
+      "ten": "Dress 7",
+      "gia": 180,
+      "image": "vay2.jpg",
+      "soluong": 10,
+      "theloai": "dress",
+      "ngayNhap": "12-11-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "8",
+      "ten": "Dress 8",
+      "gia": 140,
+      "image": "vay9.jpg",
+      "soluong": 10,
+      "theloai": "dress",
+      "ngayNhap": "05-11-2020",
+      "soluongMua": 0
+    },
+    {
+      "id": "a1",
+      "ten": "Troser7 HSG",
+      "gia": 200,
+      "image": "qq3.jpg",
+      "soluong": 20,
+      "theloai": "trouser",
+      "ngayNhap": "02-12-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "a2",
+      "ten": "Troser5 HSG8",
+      "gia": 80,
+      "image": "qq5.jpg",
+      "soluong": 10,
+      "theloai": "trouser",
+      "ngayNhap": "03-12-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "a3",
+      "ten": "Troser3 HSG0",
+      "gia": 70,
+      "image": "qq6.jpg",
+      "soluong": 20,
+      "theloai": "trouser",
+      "ngayNhap": "04-12-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "a4",
+      "ten": "Troser8 HSG",
+      "gia": 60,
+      "image": "qq10.jpg",
+      "soluong": 30,
+      "theloai": "trouser",
+      "ngayNhap": "05-12-2023",
+      "soluongMua": 0
+    },
+    {
+      "id": "ddd",
+      "ten": "ddd",
+      "gia": 3,
+      "image": "bla4.jpg",
+      "soluong": 30,
+      "theloai": "dress",
+      "soluongMua": 0
+    }
+  ],
+  "category": [
+    {
+      "id": "ida 1",
+      "ten": "blazers",
+      "soluong": 44
+    },
+    {
+      "id": "ida 2",
+      "ten": "trouser",
+      "soluong": 58,
+      "category": "2"
+    },
+    {
+      "id": "ida 3",
+      "ten": "dress",
+      "soluong": 264,
+      "category": "3"
+    }
+  ],
+  "acccount": [
+    {
+      "username": "admin",
+      "password": "123456",
+      "email": "huyenhtt@gmail.com",
+      "role": "admin",
+      "gioHang": []
+    },
+    {
+      "username": "huyennt",
+      "password": "654321",
+      "email": "huyennt@gmail.com",
+      "role": "guest",
+      "gioHang": []
+    },
+    {
+      "username": "pa",
+      "password": "123456",
+      "email": "pa@gmail.com",
+      "role": "admin",
+      "gioHang": []
+    }
+  ]
+}

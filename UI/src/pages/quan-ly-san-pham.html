@@ -1,0 +1,164 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 bg-danger-subtle" id="slide-bar">
+        <div class="left-side">
+          <h3>ADMIN</h3>
+          <br /><br /><br />
+          <nav class="nav flex-column">
+            <a class="nav-link active" aria-current="page" href="#qlysanpham"
+              ><h3><img src="/assets/edit.png" alt="" />Sản Phẩm</h3></a
+            >
+            <br /><br /><br /><br />
+            <a class="nav-link" href="#category"
+              ><h3><img src="/assets/edit.png" alt="" />Thể Loại</h3></a
+            >
+          </nav>
+        </div>
+      </div>
+      <div class="slide-bar col-lg-9">
+        <h3 class="text-center">Add Products</h3>
+        <div class="flex-wrap">
+          <div class="row">
+            <form>
+              ID :
+              <input
+                type="text"
+                name="id"
+                aria-describedby="id"
+                ng-model="blazer.id"
+                class="form-control"
+                required
+              />
+              <br />
+              Tên :
+              <input
+                type="text"
+                name="ten"
+                aria-describedby="ten"
+                ng-model="blazer.ten"
+                class="form-control"
+                required
+              />
+              <br />
+              Giá :
+              <input
+                type="number"
+                name="number"
+                ng-model="blazer.gia"
+                aria-describedby="number"
+                class="form-control"
+                required
+              />
+              <br />
+              Category Name:
+              <select
+                name="category"
+                id="categories"
+                ng-model="blazer.theloai"
+                style="width: 60%"
+              >
+                <option value="blazers" ng-model="blazer.theloai">
+                  Blazers
+                </option>
+                <option value="dress" ng-model="blazer.theloai">Dress</option>
+                <option value="trouser" ng-model="blazer.theloai">
+                  Trouser
+                </option>
+              </select>
+              <br />
+              <br />
+              Số Lượng:
+              <input
+                type="number"
+                name="number"
+                ng-model="blazer.soluong"
+                aria-describedby="number"
+                class="form-control"
+                required
+              />
+              <br />
+              <!-- Ngày Nhập:
+              <input
+                type="date"
+                name="date"
+                aria-describedby="date"
+                class="form-control"
+                required
+              /> -->
+              <br /> 
+               <!-- ng-model="blazer.image"
+                aria-describedby="myfile" -->
+              Image :
+              <input
+                type="file"
+                id="myfile"
+              
+                class="form-control"
+                required
+              />
+              <br />
+              <button ng-click="handIn($event)"class="btn btn-success">HandIn</button>
+              <button type="submit" ng-click="addSP($event)" class="btn btn-success">
+                ADD
+              </button>
+              <button ng-click="updateSP($event)" class="btn btn-success">
+                UPDATE
+              </button>
+              <!-- <button
+                ng-click="deleteSP($event,$index)"
+                class="btn btn-success"
+              >
+                DELETE
+              </button> -->
+            </form>
+          </div>
+          <br />
+          <div class="row">
+            <form>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>No.</th>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Giá</th>
+                    <th>Category Name</th>
+                    <th>Số Lượng</th>
+                    <!-- <th>Ngày nhập</th> -->
+                    <th>Image</th>
+                    <th>Function</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="li in listBlazer">
+                    <td>{{$index+1}}</td>
+                    <td>{{li.id}}</td>
+                    <td>{{li.ten}}</td>
+                    <td>{{li.gia}}</td>
+                    <td>{{li.theloai}}</td>
+                    <!-- <td>{{li.ngaynhap}}</td> -->
+                    <td>{{li.soluong}}</td>
+                    <td>{{li.image}}</td>
+                    <td>
+                      <a
+                        href="#sp/details/{{li.id}}"
+                        ng-click="detailsBla($event,$index)"
+                        >Details</a
+                      >
+                      <a
+                        href="#sp/delete/{{li.id}}"
+                        ng-click="deleteSP($event,$index)"
+                        >Delete</a
+                      >
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
